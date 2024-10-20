@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <!--ejercicio 2 zoologico-->
+ <h1> Animales</h1>
+ <form id="animalForm">
+     <label for="nombre">Nombre:</label>
+     <input type="text" id="nombre" required><br><br>
+
+     <label for="especie">Especie:</label>
+     <select id="especie" required>
+         <option value="leon">León</option>
+         <option value="elefante">Elefante</option>
+         <option value="tigra">Tigre</option>
+     </select><br><br>
+
+     <button type="button" onclick="agregarAnimal()">Agregar Animal</button>
+ </form>
+
+ <h2>Animales</h2>
+ <ul id="listaAnimales"></ul>
+
+ <h2>Sonidos de Animales</h2>
+ <ul id="sonidosAnimales"></ul>
+
+ <hr>
+
+ <!--ejercicio 3 inventario de productos -->
+ <h1>Inventario de Productos</h1>
+
+ <form id="formularioProductos">
+     <label for="nombreProducto">Nombre del Producto:</label>
+     <input type="text" id="nombreProducto" name="nombreProducto" required>
+
+     <label for="precioProducto">Precio del Producto:</label>
+     <input type="number" id="precioProducto" name="precioProducto" required>
+
+     <label for="cantidadStock">Cantidad en Stock:</label>
+     <input type="number" id="cantidadStock" name="cantidadStock" required>
+
+     <label for="tipoProducto">Tipo de Producto:</label>
+     <select id="tipoProducto" name="tipoProducto" onchange="toggleMarca()">
+         <option value="Producto">Producto</option>
+         <option value="Electrodomestico">Electrodoméstico</option>
+     </select>
+
+     <div id="marcaField" style="display: none;">
+         <label for="marcaProducto">Marca (solo para Electrodomésticos):</label>
+         <input type="text" id="marcaProducto" name="marcaProducto">
+     </div>
+
+     <button type="button" onclick="agregarProducto()">Agregar Producto</button>
+     <button type="button" onclick="listarProductosConBajoStock()">Listar Productos con Bajo Stock</button>
+ </form>
+
+ <div id="resultado1"></div>
+
+ <hr>
+ 
+<!-- Ejercicio 4: Sistema de Empleados -->
+<h1>Sistema de Empleados</h1>
+<h2>Agregar Empleado</h2>
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" placeholder="Nombre"><br>
+<label for="sueldo">Sueldo por Hora:</label>
+<input type="number" id="sueldo" placeholder="Sueldo por Hora"><br>
+<label for="tipoEmpleado">Tipo de Empleado:</label>
+<select id="tipoEmpleado">
+    <option value="">Seleccione un tipo</option>
+    <option value="Tiempo Completo">Empleado a Tiempo Completo</option>
+    <option value="Medio Tiempo">Empleado a Medio Tiempo</option>
+</select><br>
+<label for="horas">Horas Trabajadas:</label>
+<input type="number" id="horas" placeholder="Horas Trabajadas"><br>
+<button onclick="agregarEmpleado()">Agregar Empleado</button>
+<button onclick="listarEmpleados()">Listar Empleados</button>
+<h2>Resultados</h2>
+<div id="resultado3" class="resultado"></div>
+</div>
+    
+    <script src="zoologico.js"></script>
+    <script src="InventarioP.js"></script>
+    <script src="SistemaEmpleados.js"> </script>
+
+</body>
+</html>
