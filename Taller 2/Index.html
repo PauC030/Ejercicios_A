@@ -83,6 +83,35 @@
 <h2>Resultados</h2>
 <div id="resultado3" class="resultado"></div>
 </div>
+<hr>
+<!--Ejercicio 5: Sistema Bancario-->
+
+<h1>Gestión de Cuentas Bancarias</h1>
+<form id="form-cuenta">
+    <label>Número de Cuenta:</label>
+    <input type="text" id="numero-cuenta" required>
+    <br>
+    <label>Saldo Inicial:</label>
+    <input type="number" id="saldo" required>
+    <br>
+    <label>Tipo de Cuenta:</label>
+    <select id="tipo">
+        <option value="ahorros">Cuenta de Ahorros</option>
+        <option value="corriente">Cuenta Corriente</option>
+    </select>
+    <br>
+    <button type="submit">Agregar Cuenta</button>
+</form>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Número de Cuenta</th>
+            <th>Saldo</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="tabla-cuentas"></tbody>
+</table>
     
     <script src="zoologico.js"></script>
     <script src="InventarioP.js"></script>
