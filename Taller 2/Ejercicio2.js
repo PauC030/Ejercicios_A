@@ -10,7 +10,7 @@ class Animal {
     }
 }
 
-// Clase León que hereda de Animal
+
 class Leon extends Animal {
     constructor(nombre) {
         super(nombre, 'León');
@@ -21,7 +21,7 @@ class Leon extends Animal {
     }
 }
 
-// Clase Elefante que hereda de Animal
+
 class Elefante extends Animal {
     constructor(nombre) {
         super(nombre, 'Elefante');
@@ -32,7 +32,7 @@ class Elefante extends Animal {
     }
 }
 
-// Clase Tigre que hereda de Animal
+
 class Tigre extends Animal {
     constructor(nombre) {
         super(nombre, 'Tigre');
@@ -43,10 +43,10 @@ class Tigre extends Animal {
     }
 }
 
-// Arreglo para almacenar los animales
+
 const animales = [];
 
-// Función para agregar un nuevo animal al arreglo
+
 function agregarAnimal() {
     const nombre = document.getElementById('nombre').value.trim();
     const especie = document.getElementById('especie').value;
@@ -65,7 +65,7 @@ function agregarAnimal() {
     limpiarFormulario();
 }
 
-// Función para listar animales en la interfaz
+
 function listarAnimales() {
     const lista = document.getElementById('listaAnimales');
     lista.innerHTML = ''; // Limpiar la lista actual
@@ -79,7 +79,7 @@ function listarAnimales() {
     hacerSonidosAnimales();
 }
 
-// Función para hacer que cada animal emita su sonido
+
 function hacerSonidosAnimales() {
     const sonidosLista = document.getElementById('sonidosAnimales');
     sonidosLista.innerHTML = ''; // Limpiar la lista de sonidos
@@ -91,7 +91,7 @@ function hacerSonidosAnimales() {
     });
 }
 
-// Función para limpiar el formulario
+
 function limpiarFormulario() {
     document.getElementById('nombre').value = '';
     document.getElementById('especie').value = 'leon';

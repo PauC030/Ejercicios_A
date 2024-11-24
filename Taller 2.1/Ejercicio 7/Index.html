@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <div class="container">
+        <h1>Promedio de los Estudiantes</h1>
+        <div class="info-curso">
+            <h2 id="nombre-curso">Curso: Matemáticas Avanzadas</h2>
+            <p id="descripcion-curso">Este curso cubre los conceptos más importantes de matemáticas avanzadas.</p>
+        </div>
+
+        <!-- Formulario para agregar estudiante -->
+        <div class="formulario">
+            <div>
+                <input type="text" id="nombre-estudiante" placeholder="Nombre del estudiante">
+                <input type="number" id="edad-estudiante" placeholder="Edad del estudiante">
+                <button id="agregar-estudiante">Agregar Estudiante</button>
+            </div>
+
+            <!-- Formulario para agregar calificación -->
+            <div>
+                <select id="estudiante-calificacion">
+                    <option value="">Seleccione un estudiante</option>
+                </select>
+                <input type="number" id="calificacion-estudiante" placeholder="Calificación">
+                <button id="agregar-calificacion">Agregar Calificación</button>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Promedio</th>
+                </tr>
+            </thead>
+            <tbody id="lista-estudiantes">
+                <!-- Los estudiantes se agregarán aquí -->
+            </tbody>
+        </table>
+
+        <div class="promedio-curso" id="promedio-curso">
+            <!-- El promedio general del curso se mostrará aquí -->
+        </div>
+    </div>
+</body>
+</html>
